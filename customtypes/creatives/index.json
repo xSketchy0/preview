@@ -1,0 +1,95 @@
+{
+  "id": "creatives",
+  "label": "Creatives",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Creative": {
+      "uid": {
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1,strong,em,hyperlink,embed"
+        },
+        "type": "StructuredText"
+      },
+      "image": {
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "description": {
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "pageBackgroundColor": {
+        "config": {
+          "label": "Background Color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "pageTextColor": {
+        "config": {
+          "label": "Text Color",
+          "placeholder": ""
+        },
+        "type": "Color"
+      },
+      "social": {
+        "config": {
+          "label": "Socials",
+          "placeholder": "",
+          "select": "web",
+          "allowTargetBlank": false
+        },
+        "type": "Link"
+      },
+      "redirectSocial": {
+        "config": {
+          "label": "Redirect to Socials",
+          "placeholder_false": "Nee",
+          "placeholder_true": "Ja",
+          "default_value": false
+        },
+        "type": "Boolean"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "text_image": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

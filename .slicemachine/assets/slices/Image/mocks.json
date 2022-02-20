@@ -1,0 +1,20 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "image",
+    "items": [],
+    "primary": {
+      "image": {
+        "dimensions": {
+          "width": null,
+          "height": null
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=null&h=null&fit=crop"
+      },
+      "objectFit": "Cover"
+    }
+  }
+]

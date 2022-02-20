@@ -1,0 +1,27 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "text",
+    "items": [],
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Voluptate proident et ullamco ea exercitation nisi enim deserunt sit Lorem. Dolore est ad non labore proident dolor esse.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Tempor in ad ullamco ea aliqua est tempor nostrud incididunt laborum laborum eiusmod consectetur ex id.",
+          "spans": []
+        }
+      ],
+      "backgroundColor": "#ec6879",
+      "textColor": "#cc1d8e",
+      "align": true
+    }
+  }
+]

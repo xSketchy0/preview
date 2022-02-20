@@ -1,0 +1,40 @@
+.textimage {
+    @apply h-full w-full py-36 flex flex-col items-center space-y-16 p-8;
+
+    @include lg {
+        padding: 10vw 10vw;
+        @apply flex-row space-x-24 space-y-0;
+    }
+
+    &--textImageRight {
+        @apply flex-col-reverse;
+
+        @include lg {
+            @apply flex-row-reverse;
+        }
+    }
+    
+
+    &__description {
+        @apply relative;
+
+        @include --text-sm;
+
+        @include lg {
+            @apply w-1/2;
+        }
+    }
+
+    &__image {
+        @apply relative w-full h-full flex items-center;
+
+        @include lg {
+            @apply w-1/2
+        }
+
+        &-wrapper {
+            @apply flex-grow aspect-square;
+            clip-path: circle(50% at 50% 50%);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.image {
+    @apply relative overflow-hidden;
+    height: 40vh;
+
+    @include lg {
+        @apply h-screen;
+
+        span {
+            padding: 5vw !important;
+            margin: -5vw !important;
+        }
+    }
+
+    // @include lg {
+    //     padding: 0;
+    //     // padding: 6vw 0vw;
+    // }
+    // @include lg {
+    //     @apply h-screen overflow-hidden;
+    // }
+    // >div {
+    //     @apply overflow-hidden relative w-full h-full;
+
+    //     @include lg {
+    //         @apply aspect-none;
+    //     }
+
+    //     @include lg {
+    //         span {
+    //             padding: 5vw !important;
+    //             margin: -5vw !important;
+    //         }
+    //     }
+    // }
+}

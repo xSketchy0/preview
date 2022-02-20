@@ -1,0 +1,40 @@
+.agenda {
+    background: $blue;
+    color: $white;
+    @apply min-h-screen pt-24;
+
+    @include lg {
+        padding: 10vw 0vw;
+        padding-bottom: 0;
+    }
+
+    &__header {
+        @apply px-8 mb-24;
+
+        @include lg {
+            padding: 0vw 10vw;
+        }
+    }
+
+    &__title {
+        @include --text-xl;
+        @apply text-center mb-4;
+
+        @include lg {
+            @apply text-left mb-8;
+        }
+    }
+
+    &__subtitle {
+        @include --text-sm;
+        @apply text-center;
+
+        @include lg {
+            @apply text-left;
+        }
+    }
+
+    &__calendar {
+        
+    }
+}

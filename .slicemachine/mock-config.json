@@ -1,0 +1,34 @@
+{
+  "slices": {
+    "CallToAction": {
+      "default-slice": {
+        "primary": {
+          "backgroundColor": {
+            "content": "#ad080f"
+          },
+          "buttonColor": {
+            "content": "#09143b"
+          },
+          "buttonTextColor": {
+            "content": "#ffffff"
+          },
+          "textColor": {
+            "content": "#ffffff"
+          },
+          "buttonText": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

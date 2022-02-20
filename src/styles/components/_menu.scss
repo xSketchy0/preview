@@ -1,0 +1,54 @@
+.menu {
+    @apply fixed inset-0 z-30 p-8 py-16 h-screen;
+    background: $blue;
+    color: $white;
+
+    @include lg {
+        padding: 10vw;
+    }
+
+    &__forms {
+        @apply absolute inset-0 -z-10;
+    }
+
+    &__wrapper {
+        @apply flex items-center justify-center h-full;
+
+        @include --text-lg;
+    }
+
+    &__items {
+        @apply flex flex-col items-center;
+    }
+
+    &__item {
+        &:hover {
+            @apply underline;
+        }
+    }
+
+    &__circle {
+        @apply p-8 rounded-full inline-block drop-shadow-sm absolute left-1/2 transform -translate-x-1/2;
+        background: $red;
+
+        &:nth-child(1) {
+            @apply p-80;
+            top: -32rem;
+
+            @include lg {
+                top: -50vw;
+                padding: 30vw;
+            }
+        }
+
+        &:nth-child(2) {
+            @apply p-80;
+            bottom: -32rem;
+
+            @include lg {
+                padding: 30vw;
+                bottom: -50vw;
+            }
+        }
+    }
+}

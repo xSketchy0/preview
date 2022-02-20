@@ -1,0 +1,92 @@
+.contact {
+    @apply min-h-screen z-0 pt-24 overflow-hidden;
+    background: $blue;
+    color: $white;
+
+    @include lg {
+        @apply pt-36;
+    }
+
+    &__hero {
+        @apply relative px-8 z-0;
+        @include lg {
+            padding: 10vw;
+        }
+
+        &-wrapper {
+            @apply absolute inset-0 -z-10;
+        }
+
+        &-circle {
+            border-radius: 50%;
+            background: $red;
+            filter: drop-shadow(0 1rem 1rem rgba(34, 30, 30, 0.1));
+            @apply p-8 -z-10 inline-block absolute;
+    
+            @include lg {
+                padding: 3vw;
+            }
+    
+            &:nth-child(1) {
+                bottom: -40px;
+                left: -80px;
+                @apply p-16;
+    
+                @include lg {
+                    padding: 25vw;
+                    top: -10vw;
+                    bottom: initial;
+                    left: -40vw;
+                }
+            }
+    
+            &:nth-child(2) {
+                right: -50px;
+                top: -40px;
+                @apply p-20;
+    
+                @include lg {
+                    right: -40vw;
+                    top: -10vw;
+                    padding: 25vw;
+                }
+            }
+        }
+
+        &-text {
+            @include lg {
+                @apply m-auto;
+                width: fit-content;
+            }
+        }
+    }
+
+    &__veld {
+        margin-right: 5vw;
+        margin-bottom: 2vw;
+    }
+    &__title {
+        @include --text-lg;
+        color: $white;
+        margin-bottom: 0.5vw;
+        @apply block underline;
+
+        @include lg {
+            font-size: 4.5vw;
+        }
+    }
+
+    &__content {
+        margin-bottom: 1vw;
+    }
+
+    &__naam, &__email {
+        @apply block;
+        @include --text-sm;
+    }
+
+    &__email {
+        @apply font-light;
+        @include --text-xs;
+    }
+}

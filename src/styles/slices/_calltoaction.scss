@@ -1,0 +1,71 @@
+.calltoaction {
+    @apply flex justify-center items-center p-8 py-16;
+
+    @include lg {
+        padding: 5vw 10vw;
+    }
+
+    &__description {
+        @include --text-sm;
+        @apply mb-4;
+
+        @include lg {
+            margin-bottom: 3vw;
+        }
+    }
+
+    &__wrapper {
+        @include lg {
+            @apply w-3/4;
+        }
+    }
+
+    &__button {
+        @apply rounded-full p-8 px-16 items-center justify-center inline-flex;
+        @include --text-sm;
+
+        @include lg {
+            padding: 2vw 6vw;
+        }
+
+        p {
+            @apply mb-0;
+        }
+
+        &-wrapper {
+            @apply items-center flex;
+        }
+    }
+    // @apply p-8 py-16 flex justify-center items-center;
+
+    // @include for-desktop-up {
+    //     padding: 5vw 10vw;
+    // }
+
+    // &__description {
+    //     @include --text-sm;
+    //     @apply mb-4;
+    //     @include for-desktop-up {
+    //         margin-bottom: 2vw;
+    //     }
+    // }
+
+    // &__wrapper {
+    //     @include for-desktop-up {
+    //         @apply w-3/4;
+    //     }
+    // }
+
+    // &__button {
+    //     border-radius: 100px;
+    //     @apply p-8 px-16 items-center justify-center inline-flex;
+    //     @include for-desktop-up {
+    //         padding: 2vw 6vw;
+    //         @include --text-sm;
+    //     }
+
+    //     &-wrapper {
+    //         @apply items-center flex;
+    //     }
+    // }
+}

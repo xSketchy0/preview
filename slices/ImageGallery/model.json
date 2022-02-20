@@ -1,0 +1,26 @@
+{
+  "id": "image_gallery",
+  "type": "SharedSlice",
+  "name": "ImageGallery",
+  "description": "ImageGallery",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ImageGallery",
+      "primary": {},
+      "items": {
+        "image": {
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        }
+      }
+    }
+  ]
+}

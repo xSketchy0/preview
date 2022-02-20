@@ -1,0 +1,94 @@
+{
+  "id": "contact",
+  "label": "Contact",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "item": {
+        "config": {
+          "label": "Contact",
+          "fields": {
+            "naam": {
+              "config": {
+                "label": "Naam",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "email": {
+              "config": {
+                "label": "Email",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "veld": {
+              "config": {
+                "label": "Veld",
+                "placeholder": "",
+                "options": [
+                  "Directeur",
+                  "Verhuur",
+                  "Marketing & Communicatie",
+                  "Programmering"
+                ]
+              },
+              "type": "Select"
+            }
+          }
+        },
+        "type": "Group"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "text_image": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Slices Top": {
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text_image": {
+              "type": "SharedSlice"
+            },
+            "text": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "image_gallery": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.imagegallery {
+    @apply grid;
+    grid-template-columns: auto;
+
+    @include lg {
+        grid-template-columns: auto auto auto;
+    }
+
+    &__item {
+        @apply relative overflow-hidden;
+        aspect-ratio: 12 / 14;
+
+        @include lg {
+            span {
+                padding: 5vw !important;
+                margin: -5vw !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@mixin --text-xxl {
+    @apply text-8xl;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 12vw;
+    }
+}
+
+@mixin --text-xl {
+    @apply text-6xl;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 7vw;
+    }
+}
+
+@mixin --text-lg {
+    @apply text-5xl;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 5vw;
+    }
+}
+
+@mixin --text-md {
+    @apply text-3xl;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 2.5vw;
+    }
+}
+
+@mixin --text-sm {
+    @apply text-lg leading-snug;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 2vw;
+    }
+}
+
+@mixin --text-xs {
+    @apply text-base;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 1.3vw;
+    }
+}
+
+@mixin --text-xxs {
+    @apply text-sm;
+
+    @include lg {
+        @apply leading-none;
+        font-size: 1vw;
+    }
+}
+
+// @function if-important($important){
+//     @return #{if($important, '!important', '')};
+//   }
+
+//   @mixin --text-xxxl($important: false) {
+//     font-size: 20vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 12vw if-important($important);
+//     }
+// }
+
+// @mixin --text-xxl($important: false) {
+//     font-size: 10vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 8vw if-important($important);
+//     }
+// }
+
+// @mixin --text-xl($important: false) {
+//     font-size: 11vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 6vw if-important($important);
+//     }
+// }
+
+// @mixin --text-lg($important: false) {
+//     font-size: 10vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 5vw if-important($important);
+//     }
+// }
+
+// @mixin --text-md($important: false) {
+//     font-size: 9vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 4vw if-important($important);
+//     }
+// }
+
+// @mixin --text-sm($important: false) {
+//     font-size: 6vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 2vw if-important($important);
+//     }
+// }
+
+// @mixin --text-xs($important: false) {
+//     font-size: 4vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: 1vw if-important($important);
+//     }
+// }
+
+// @mixin --text-xxs($important: false) {
+//     font-size: 3.2vw if-important($important);
+//     line-height: 1.1;
+
+//     @include for-desktop-up {
+//         font-size: .9vw if-important($important);
+//     }
+// }

@@ -1,0 +1,37 @@
+.header {
+    @apply h-8 w-full flex fixed justify-between flex my-8 z-30 px-8 mix-blend-difference text-white;
+
+    @include lg {
+        @apply h-12 my-12;
+        padding: 0 10vw;
+    }
+
+    &__button {
+        &-wrapper {
+            @apply h-full flex items-center space-x-2 cursor-pointer;
+            svg {
+                @apply h-full w-full;
+            }
+
+            @include lg {
+                @apply space-x-4;
+            }
+        }
+
+        &-text {
+            @apply text-base;
+
+            @include lg {
+                @apply text-xl;
+            }
+        }
+    }
+    
+    &__logo {
+        @apply py-1;
+        &-wrapper {
+            @apply relative block h-full;
+            aspect-ratio: 27 / 7;
+        }
+    }
+}

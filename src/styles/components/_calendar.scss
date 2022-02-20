@@ -1,0 +1,69 @@
+.calendar {
+    &__heading {
+        @apply px-8 py-8 text-center text-4xl;
+        background: $red;
+        color: $white;
+
+        @include lg {
+            padding: 5vw 10vw;
+            @apply text-left;
+            font-size: 5vw;
+        }
+    }
+
+    &__row {
+        @apply px-8 flex my-8;
+
+        @include lg {
+            padding: 0vw 10vw;
+            @apply my-16;
+        }
+    }
+
+    &__events {
+        @include lg {
+            @apply flex flex-wrap;
+        }
+    }
+
+    &__event {
+        @apply mr-16 pb-8;
+
+        &-time {
+            @include --text-xxs;
+        }
+
+        &-location {
+            @include --text-xxs;
+        }
+
+        &-summary {
+            @include --text-md;
+        }
+
+        &-description {
+            a {
+                @apply underline;
+            }
+        }
+    }
+
+    &__wrapper {
+        @apply flex flex-col space-y-3;
+    }
+
+    &__data {
+        @apply flex flex-col mr-16; 
+    }
+
+    &__day {
+        &-name {
+            @include --text-xxs;
+            @apply capitalize;
+        }
+
+        &-number {
+            @include --text-xl;
+        }
+    }
+}

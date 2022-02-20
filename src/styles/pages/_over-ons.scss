@@ -1,0 +1,137 @@
+.over-ons {
+    background: $red;
+    color: $white;
+
+    &__hero {
+        @apply h-screen relative z-0 p-8 py-16;
+        background: $red;
+        color: $white;
+
+        @include lg {
+            padding: 10vw;
+        }
+
+        &-forms {
+            @apply absolute inset-0 -z-10;
+        }
+
+        &-form {
+            background: url("/svg/over-ons-hero-form.svg") no-repeat;
+            background-size: contain;
+            background-position-x: -100px;
+            background-position-y: -100px;
+            @apply inset-0 absolute;
+        }
+
+        &-text {
+            @apply w-full h-full flex flex-col;
+        }
+
+        &-top {
+            @include --text-xxl;
+            @apply text-center flex items-center justify-center h-1/2;
+
+            @include lg {
+                @apply text-left justify-start;
+            }
+        }
+
+        &-bottom {
+            @include --text-md;
+            @apply text-center items-center flex h-1/2 relative;
+            
+            @include lg {
+                @apply text-right place-self-end;
+                max-width: 40vw;
+            }
+
+            .circle {
+                @apply absolute inline-block rounded-full drop-shadow-sm p-8;
+                background: $blue;
+
+                @include lg {
+                    padding: 3vw;
+                }
+
+                &:nth-child(1) {
+                    top: -20px;
+                    left: 20px;
+
+                    @include lg {
+                        top: auto;
+                        padding: 4vw;
+                        left: 5vw;
+                        bottom: -3vw;
+                    }
+                }
+
+                &:nth-child(2) {
+                    @apply p-12;
+                    bottom: -60px;
+                    left: 30px;
+
+                    @include lg {
+                        bottom: auto;
+                        padding: 3vw;
+                        left: -3vw;
+                        top: -3vw;
+                    }
+                }
+
+                &:nth-child(3) {
+                    @apply p-10 z-0;
+                    right: -10px;
+                    top: 30px;
+
+                    @include lg {
+                        padding: 5vw;
+                        right: -2vw;
+                        top: -6vw;
+                    }
+                }
+            }
+        }
+    }
+
+    &__double {
+        @apply relative z-0;
+        background: $red;
+        color: $white;
+
+        @include lg {
+            @apply h-screen;
+        }
+
+        &-wrapper {
+            @apply h-full w-full py-36 flex flex-col items-center space-y-16 p-8;
+
+            @include lg {
+                padding: 0 10vw;
+                @apply flex-row space-x-24 space-y-0;
+            }
+        }
+
+        &-text {
+            @apply relative;
+
+            @include --text-sm;
+
+            @include lg {
+                @apply w-1/2;
+            }
+        }
+
+        &-image {
+            @apply relative w-full h-full flex items-center;
+
+            @include lg {
+                @apply w-1/2
+            }
+
+            &-wrapper {
+                @apply flex-grow aspect-square;
+                clip-path: circle(50% at 50% 50%);
+            }
+        }
+    }
+}

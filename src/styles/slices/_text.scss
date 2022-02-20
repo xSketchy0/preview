@@ -1,0 +1,21 @@
+.text {
+    @apply py-16 px-8;
+
+    @include lg {
+        padding: 10vw;
+    }
+
+    &__wrapper {
+        @include lg {
+            @apply w-3/4 m-auto;
+        }
+    }
+
+    &__title {
+        @include --text-lg;
+    }
+
+    &__description {
+        @include --text-sm;
+    }
+}

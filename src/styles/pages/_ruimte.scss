@@ -1,0 +1,27 @@
+.ruimte {
+    @apply min-h-screen pt-24;
+    background: $blue;
+    color: $white;
+
+    @include lg {
+        @apply pt-36;
+    }
+    
+    &__title {
+        @apply flex items-center p-4 px-8;
+        @include --text-xl;
+        
+        @include lg {
+            padding: 0vw 10vw;
+        }
+    }
+
+    &__description {
+        @apply p-4 px-8;
+        @include --text-md;
+        
+        @include lg {
+            padding: 3vw 10vw;
+        }
+    }
+}

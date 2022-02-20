@@ -1,0 +1,96 @@
+{
+  "id": "call_to_action",
+  "type": "SharedSlice",
+  "name": "CallToAction",
+  "description": "CallToAction",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "CallToAction",
+      "primary": {
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "descriptionAlign": {
+          "config": {
+            "label": "Description Align",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Center",
+              "Right"
+            ]
+          },
+          "type": "Select"
+        },
+        "buttonText": {
+          "config": {
+            "label": "Button Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          },
+          "type": "StructuredText"
+        },
+        "buttonAlign": {
+          "config": {
+            "label": "Button Align",
+            "placeholder": "",
+            "options": [
+              "Left",
+              "Center",
+              "Right"
+            ]
+          },
+          "type": "Select"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "backgroundColor": {
+          "config": {
+            "label": "Background Color",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "buttonColor": {
+          "config": {
+            "label": "Button Color",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "buttonTextColor": {
+          "config": {
+            "label": "Button Text Color",
+            "placeholder": ""
+          },
+          "type": "Color"
+        },
+        "textColor": {
+          "config": {
+            "label": "Text Color",
+            "placeholder": ""
+          },
+          "type": "Color"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

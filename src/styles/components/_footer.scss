@@ -1,0 +1,54 @@
+.footer {
+    @apply relative py-16 p-8;
+
+    @include lg {
+        padding: 10vw 10vw;
+    }
+
+    &__wrapper {
+        @apply flex flex-col items-center space-y-4;
+        
+        @include lg {
+            @apply space-y-8;
+        }
+    }
+
+    &__horizontal {
+        @apply flex flex-col items-center justify-center space-y-4;
+        @include lg {
+            @apply flex-row space-x-8 space-y-0;
+        }
+    }
+
+    &__title {
+        @include --text-lg;
+    }
+
+    &__address {
+        @apply flex flex-col;
+
+        @include --text-xs;
+    }
+
+    &__socials {
+        @apply flex space-x-8 items-center justify-between;
+        a {
+            @apply flex inline-block p-3 rounded-full;
+            background: $blue;
+            @include lg {
+                padding: .7vw;
+            }
+        }
+        svg {
+            fill: $white;
+            @apply h-5;
+            @include lg {
+                height: 1.5vw;
+            }
+        }
+    }
+
+    &__image {
+        @apply w-1/4;
+    }
+}

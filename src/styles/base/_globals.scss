@@ -1,0 +1,35 @@
+svg path {
+    stroke-width: 1.5;
+}
+
+body {
+    background: $white;
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+    color: $blue;
+
+    @include lg {
+        @apply overflow-hidden;
+    }
+}
+
+p {
+    @apply mb-4;
+    @include lg {
+        margin-bottom: 2vw;
+    }
+}
+
+body.has-scroll-smooth {
+	backface-visibility: hidden;
+	transform: translateZ(0);
+}
+
+[data-load-container] {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+}

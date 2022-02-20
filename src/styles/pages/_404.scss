@@ -1,0 +1,14 @@
+.notfound {
+    @apply h-screen flex justify-center items-center;
+    h1 {
+        @apply flex-col flex items-center;
+
+        span {
+            &:last-child {
+                @include --text-xs;
+            }
+        }
+    }
+    @include --text-xl;
+    color: $red;
+}
